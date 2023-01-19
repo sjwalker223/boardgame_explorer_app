@@ -15,6 +15,7 @@ def get_index_from_name(name):
 
 # Build app
 app = Dash(__name__)
+server = app.server
 
 app.layout = html.Div([
     html.H1("Find new board games!"),
