@@ -82,27 +82,27 @@ def update_output_div(input_game):
     game_id = get_index_from_name(input_game)
     # Exclude the first game (because this will be the game entered)
     # Get the ID of the recommended game, then return name, image URL and description of this game
-    recID = Games_df.iloc[knn_indices_df[1][game_id]].name
+    recID = Games_df.iloc[knn_indices_df['1'][game_id]].name
     r1 = Games_df.loc[recID]['handle']
     i1 = Game_Meta.loc[recID]['Image_URL']
     d1 = Game_Meta.loc[recID]['Description']
     
-    recID = Games_df.iloc[knn_indices_df[2][game_id]].name
+    recID = Games_df.iloc[knn_indices_df['2'][game_id]].name
     r2 = Games_df.loc[recID]['handle']
     i2 = Game_Meta.loc[recID]['Image_URL']
     d2 = Game_Meta.loc[recID]['Description']
     
-    recID = Games_df.iloc[knn_indices_df[3][game_id]].name
+    recID = Games_df.iloc[knn_indices_df['3'][game_id]].name
     r3 = Games_df.loc[recID]['handle']
     i3 = Game_Meta.loc[recID]['Image_URL']
     d3 = Game_Meta.loc[recID]['Description']
     
-    recID = Games_df.iloc[knn_indices_df[4][game_id]].name
+    recID = Games_df.iloc[knn_indices_df['4'][game_id]].name
     r4 = Games_df.loc[recID]['handle']
     i4 = Game_Meta.loc[recID]['Image_URL']
     d4 = Game_Meta.loc[recID]['Description']
     
-    recID = Games_df.iloc[knn_indices_df[5][game_id]].name
+    recID = Games_df.iloc[knn_indices_df['5'][game_id]].name
     r5 = Games_df.loc[recID]['handle']
     i5 = Game_Meta.loc[recID]['Image_URL']
     d5 = Game_Meta.loc[recID]['Description']
