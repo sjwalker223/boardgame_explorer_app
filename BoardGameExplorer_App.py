@@ -2,7 +2,6 @@ import pandas as pd
 from dash import Dash, html, dcc
 from dash.dependencies import Input, Output
 import plotly.express as px
-import sd_material_ui
 
 #Read necessary CSV files
 Games_df = pd.read_csv("https://raw.githubusercontent.com/sjwalker223/board-games/main/Games_df.csv",index_col=0)
